@@ -1,0 +1,19 @@
+Sur un système de type UNIX, ouvrir un terminal.
+
+Après avoir récupéré l'archive (ou le répertoire) contenant le code source, procéder de la manière suivante :
+- Extraire le dossier de l'archive dans le cas où c'est une archive qui a été récupérée.
+- Se positionner dans le répertoire contenant le code source (avec cd)
+
+Pour créer les exécutables, taper la commande suivante dans un terminal depuis le répertoire contenant les codes sources :
+make
+
+Pour lancer l'exécutable principal, toujours depuis le même répertoire, taper la commande suivante :
+./exec/affichage
+
+Pour lancer l'exécutable de la génération des fichiers tests, taper la commande ./exec/gen_fic_alea_donnees avec les 4 paramètres suivants (séparés par des espaces, le 1er paramètre faisant directement suite à ./exec/gen_fic_alea_donnees sur la ligne de commande) dans cet ordre :
+- Un nom de fichier, celui qui contiendra les points générés aléatoirement par l'exécutable
+- Le nombre de points à générer (un entier supérieur à 0)
+- La classe maximum d'un point (un entier supérieur à 0)
+- Le nombre de dimensions (toujours mettre 2, notre programme ne peut pas gérer plus ou moins de deux dimensions)
+
+Entrer ./exec/gen_fic_alea_donnees sans paramètre ou l'utiliser de mauvaise manière affichera une aide sur le terminal.
